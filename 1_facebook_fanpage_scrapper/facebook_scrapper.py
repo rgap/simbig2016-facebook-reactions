@@ -54,7 +54,7 @@ class FacebookScrapper:
         try:
             # Create Graph API Call
             args = (
-                "/v2.7?id=" + post_id +
+                "v2.7?id=" + post_id +
                 "&fields="
                 "reactions.type(LIKE).limit(0).summary(total_count)"
                 ".as(reactions_like),"
@@ -88,9 +88,10 @@ class FacebookScrapper:
             c[6] = likes_json["reactions_thankful"]["summary"]["total_count"]
             return c
         except:
-            print("exception: get_reactions_count")
+            print("exception: get_reactions_count - leaving it with 0s")
+            print(likes_json)
             print(likes_url)
-            return ""
+            return c
 
     def create_post_url(self, company):
         # Create authenticated post URL
@@ -143,7 +144,9 @@ class FacebookScrapper:
 
     def scrape_posts_by_date(self, post_url, date, posts, company,
                              db_posts_dict, max_posts):
-
+        # Save last posts url
+        with open('last_post_url.txt', 'w') as lastpost_file:
+            lastpost_file.write(post_url)
         # Render URL to JSON
         json_data = self.render_to_json(post_url)
 
@@ -165,6 +168,20 @@ class FacebookScrapper:
                     continue
 
                 message = self.get_elementvalue(post, "message")
+                time_created = self.get_elementvalue(post, "created_time")
+                shares = self.get_elementvalue(post, ["shares", "count"])
+                fanpagelink = self.get_fanpagelink(company, fb_post_id)
+                post_type = self.get_elementvalue(post, "type")
+                link = self.get_elementvalue(post, "link")
+                print(fanpagelink)
+                name = self.get_elementvalue(post, "name")
+                description = self.get_elementvalue(post, "description")
+                external_picture = self.get_picture_url(
+                                        self.get_elementvalue(post, "picture"))
+                num_comments = self.get_num_comments(fb_post_id)
+                if num_comments == "L":
+                    return
+
                 counter = self.get_reactions_count(fb_post_id)
                 if counter == "L":
                     return
@@ -175,19 +192,6 @@ class FacebookScrapper:
                 fb_sad = counter[4]
                 fb_angry = counter[5]
                 fb_thankful = counter[6]
-
-                time_created = self.get_elementvalue(post, "created_time")
-                shares = self.get_elementvalue(post, ["shares", "count"])
-                fanpagelink = self.get_fanpagelink(company, fb_post_id)
-                post_type = self.get_elementvalue(post, "type")
-                link = self.get_elementvalue(post, "link")
-                name = self.get_elementvalue(post, "name")
-                description = self.get_elementvalue(post, "description")
-                external_picture = self.get_picture_url(
-                                        self.get_elementvalue(post, "picture"))
-                num_comments = self.get_num_comments(fb_post_id)
-                if num_comments == "L":
-                    return
 
                 current_post = [fb_post_id, message, fb_like, fb_love,
                                 fb_wow, fb_haha, fb_sad, fb_angry,
@@ -231,11 +235,14 @@ class FacebookScrapper:
             comments_json = self.render_to_json(comments_url)
             if self.request_limit_reached(comments_json):
                 return "L"
-            return comments_json["summary"]["total_count"]
+            if not comments_json["data"] == []:
+                return comments_json["summary"]["total_count"]
+            else:
+                return 0
         except:
             print("exception: get_num_comments")
             print(comments_url)
-            return ""
+            return 0
 
     def get_comments_data(self, comments_url, comments, post_id):
 

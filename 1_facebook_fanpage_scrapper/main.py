@@ -1,14 +1,16 @@
 #!/usr/bin/env python
-"""Image file resizer
+"""Facebook fanpage scrapper
 
 Usage:
-    main.py <max_posts>
+    main.py <max_posts> <config_path>
 
 Arguments:
-    max_posts   maximum number of posts to get
+    max_posts       maximum number of posts to get
+    config_path     configuration file
 
 """
 
+import os
 import sys
 import json
 import mysql.connector
@@ -164,9 +166,10 @@ def main(args):
 
     # Max number of posts
     max_posts = int(args['<max_posts>'])
+    config_path = args['<config_path>']
 
     # Load configuration file
-    with open('config.json') as config_file:
+    with open(config_path) as config_file:
         config = json.loads(config_file.read())
 
     # To find go to page's FB page, at the end of URL find username
@@ -197,6 +200,12 @@ def main(args):
     db_posts = db_connection.get_posts()
     get_db_posts(db_posts_dict, db_posts)
 
+    # Get last posts url
+    post_url = ""
+    if os.path.isfile('last_post_url.txt'):
+        with open('last_post_url.txt', 'r') as lastpost_file:
+            post_url = lastpost_file.read()
+
     for company in list_companies:
 
         # Make graph api url with company username
@@ -206,9 +215,10 @@ def main(args):
         db_connection.commit()
         db_connection.close()
 
-        # Extract post data
-        post_url = fc.create_post_url(company)
         posts = []
+        # Extract post data
+        if post_url == "":
+            post_url = fc.create_post_url(company)
         print(post_url)
         fc.scrape_posts_by_date(post_url, last_crawl,
                                 posts, company, db_posts_dict, max_posts)
