@@ -2,12 +2,14 @@
 """Facebook fanpage scrapper
 
 Usage:
-    main.py <max_posts> <config_path>
+    main.py <max_posts> <config_path> [--continue]
 
 Arguments:
     max_posts       maximum number of posts to get
     config_path     configuration file
-
+    --continue      to continue scrapping since last post,
+                    the file  containing this last post' url
+                    is at tmp/lastpost_<DATASETNAME>.txt'
 """
 
 import os
@@ -144,7 +146,8 @@ class DBConnection:
                     print("insert_comment already exists")
                     return self.cursor.fetchone()[0]
                 except mysql.connector.Error as e:
-                    print("Something went wrong - insert_comment: {}".format(e))
+                    print("Something went wrong - insert_comment: {}".
+                          format(e))
                     print("trying again... " + str(tries))
                     tries += 1
                     pass
@@ -167,6 +170,7 @@ def main(args):
     # Max number of posts
     max_posts = int(args['<max_posts>'])
     config_path = args['<config_path>']
+    continue_flag = args["--continue"]
 
     # Load configuration file
     with open(config_path) as config_file:
@@ -202,9 +206,11 @@ def main(args):
 
     # Get last posts url
     post_url = ""
-    if os.path.isfile('last_post_url.txt'):
-        with open('last_post_url.txt', 'r') as lastpost_file:
-            post_url = lastpost_file.read()
+    lasturl_path = 'tmp/lasturl_%s.txt' % config["database"]
+    if(continue_flag):
+        if os.path.isfile(lasturl_path):
+            with open(lasturl_path, 'r') as lastpost_file:
+                post_url = lastpost_file.read()
 
     for company in list_companies:
 
@@ -221,7 +227,8 @@ def main(args):
             post_url = fc.create_post_url(company)
         print(post_url)
         fc.scrape_posts_by_date(post_url, last_crawl,
-                                posts, company, db_posts_dict, max_posts)
+                                posts, company, db_posts_dict, max_posts,
+                                lasturl_path)
 
         # Reconnect
         db_connection.connect()

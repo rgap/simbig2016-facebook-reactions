@@ -1,0 +1,9 @@
+{
+    "db_user" : "root",
+    "db_password" : "1",
+    "hostname" : "localhost",
+    "database" : "facebook_fanpage_nytimes",
+    "fb_fanpage_name" : "nytimes",
+    "APP_SECRET" : "28578690baddda5067c19cd7b7c9446e",
+    "APP_ID" : "1443249892642264"
+}

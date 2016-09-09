@@ -1,0 +1,17 @@
+{ 
+    "paths": ["../1_facebook_fanpage_scrapper/config/config_9gag.json",
+              "../1_facebook_fanpage_scrapper/config/config_boredpanda.json",
+              "../1_facebook_fanpage_scrapper/config/config_buzzfeed.json",
+              "../1_facebook_fanpage_scrapper/config/config_cnn.json",
+              "../1_facebook_fanpage_scrapper/config/config_cnninternational.json",
+              "../1_facebook_fanpage_scrapper/config/config_DailyMail.json",
+              "../1_facebook_fanpage_scrapper/config/config_FoxNews.json",
+              "../1_facebook_fanpage_scrapper/config/config_HuffingtonPost.json",
+              "../1_facebook_fanpage_scrapper/config/config_IFeakingLoveScience.json",
+              "../1_facebook_fanpage_scrapper/config/config_imdb.json",
+              "../1_facebook_fanpage_scrapper/config/config_mashable.json",
+              "../1_facebook_fanpage_scrapper/config/config_natgeo.json",
+              "../1_facebook_fanpage_scrapper/config/config_nytimes.json",
+              "../1_facebook_fanpage_scrapper/config/config_unilad.json"
+          ]
+}

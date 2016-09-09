@@ -1,0 +1,3 @@
+best_params_: {'vect__ngram_range': (1, 2), 'vect__max_df': 1.0, 'clf__n_iter': 10000, 'clf__loss': 'modified_huber', 'tfidf__use_idf': True, 'vect__min_df': 1, 'clf__penalty': 'l2', 'clf__alpha': 1e-05}
+
+best_score_: 0.692570546737

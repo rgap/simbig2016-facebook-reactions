@@ -143,9 +143,9 @@ class FacebookScrapper:
             return False
 
     def scrape_posts_by_date(self, post_url, date, posts, company,
-                             db_posts_dict, max_posts):
+                             db_posts_dict, max_posts, lasturl_path):
         # Save last posts url
-        with open('last_post_url.txt', 'w') as lastpost_file:
+        with open(lasturl_path, 'w') as lastpost_file:
             lastpost_file.write(post_url)
         # Render URL to JSON
         json_data = self.render_to_json(post_url)
@@ -215,7 +215,7 @@ class FacebookScrapper:
             next_page = json_data["paging"]["next"]
             print("next page = " + next_page)
             self.scrape_posts_by_date(next_page, date, posts, company,
-                                      db_posts_dict, max_posts)
+                                      db_posts_dict, max_posts, lasturl_path)
         except:
             print("no more posts")
             return

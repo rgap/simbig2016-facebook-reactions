@@ -1,3 +1,7 @@
+# DROP DATABASE IF EXISTS facebook_fanpage_buzzfeed;
+# CREATE DATABASE facebook_fanpage_buzzfeed;
+# USE facebook_fanpage_buzzfeed;
+
 CREATE TABLE page(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     fb_id VARCHAR(200),

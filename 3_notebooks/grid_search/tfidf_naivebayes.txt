@@ -1,0 +1,3 @@
+best_params_: {'vect__ngram_range': (1, 1), 'tfidf__use_idf': False, 'vect__min_df': 4, 'vect__max_df': 0.040000000000000001}
+
+best_score_: 0.680044101433
