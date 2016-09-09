@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 SEP 2016 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 SEP 2016 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -215,12 +215,7 @@ LaTeX Info: Redefining \] on input line 2666.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count112
-)
-
-LaTeX Warning: Unused global option(s):
-    [9pt].
-
-(./acl2016.aux)
+) (./acl2016.aux)
 \openout1 = `acl2016.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -238,7 +233,8 @@ LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 49.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) ABD: EveryShipout initializing macros
+)
+ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
@@ -328,7 +324,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \vbox (badness 1097) has occurred while \output is active []
+Underfull \vbox (badness 3199) has occurred while \output is active []
 
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -380,7 +376,7 @@ oks/notebook_figures/corr_mat.pdf
 
 pdfTeX warning: pdflatex (file ../3_notebooks/notebook_figures/corr_mat.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <../3_notebooks/notebook_figures/conf.pdf, id=94, 360.34625pt x 313.17pt>
+>] <../3_notebooks/notebook_figures/conf.pdf, id=100, 360.34625pt x 313.17pt>
 File: ../3_notebooks/notebook_figures/conf.pdf Graphic file (type pdf)
 
 <use ../3_notebooks/notebook_figures/conf.pdf>
@@ -406,10 +402,10 @@ Underfull \hbox (badness 2111) in paragraph at lines 42--48
 ) [4] (./acl2016.aux) )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 4349 strings out of 493089
- 63378 string characters out of 6134842
- 234616 words of memory out of 5000000
- 7739 multiletter control sequences out of 15000+600000
+ 4348 strings out of 493089
+ 63372 string characters out of 6134842
+ 234615 words of memory out of 5000000
+ 7738 multiletter control sequences out of 15000+600000
  27028 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,38p,1058b,345s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -422,10 +418,10 @@ ype1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on acl2016.pdf (4 pages, 161901 bytes).
+Output written on acl2016.pdf (4 pages, 163623 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 233 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
