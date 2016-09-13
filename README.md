@@ -1,4 +1,4 @@
-Reproduce the Experiments in "[Predicting Reactions to Blog Headlines]()"
+Reproduce the Experiments in "[Predicting Reactions to Blog Headlines](http://bit.ly/2czObz2)"
 
 ## Environment
 
