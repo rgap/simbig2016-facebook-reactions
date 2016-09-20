@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex acl2016"] 1473385393 "acl2016.aux" "acl2016.bbl" "acl2016" 1473387148
+["bibtex acl2016"] 1474411213 "acl2016.aux" "acl2016.bbl" "acl2016" 1474412534
   "./acl2016.bst" 1453044652 25099 9e361dd593cf5bde4bcdca583d3b8ad3 ""
-  "acl2016.aux" 1473387148 975 11227165ab693888a62d2f7d27ef3cc5 ""
+  "acl2016.aux" 1474412533 975 348e06b2798982b855c7e8ee212a9a54 ""
   "acl2016.bcf" 0 -1 0 ""
   "acl2016.bib" 1473370973 10437 0ec54a940f7c4fffa8806aaf8af62102 ""
   (generated)
   "acl2016.bbl"
   "acl2016.blg"
-["pdflatex"] 1473387148 "acl2016.tex" "acl2016.pdf" "acl2016" 1473387148
+["pdflatex"] 1474412533 "acl2016.tex" "acl2016.pdf" "acl2016" 1474412534
   "../3_notebooks/notebook_figures/boxplots_fblike_reactions.pdf" 1473387014 22551 4150f304701feebf9c35282e31fd055d ""
   "../3_notebooks/notebook_figures/conf.pdf" 1473387014 18731 f5bf0dcf2888c5dd32aa825a8defa224 ""
   "../3_notebooks/notebook_figures/corr_mat.pdf" 1473387015 14805 670880aabfa03c09836e6e4f8172fd19 ""
@@ -27,10 +27,12 @@
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1136768653 1524 d89e2d087a9828407a196f428428ef4a ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
@@ -73,7 +75,7 @@
   "/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty" 1362954379 2637 846ebe982d3549c7ede7ce135456f54a ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls" 1428932888 20708 96f8bca6e380179cada1d49716376167 ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty" 1428932888 2854 ddffcda515af28aa9e61fdd101872736 ""
-  "/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo" 1428932888 9179 632e23fed01c842f2eaef1dd9953a446 ""
+  "/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo" 1428932888 9195 b429d9ae04d88356fbd16a7b811e600f ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd" 1428932888 2020 3b0fd77961c09bb31521c65d6da482b9 ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty" 1211777752 6375 989ecfb545a13610facc71ae7e40ced1 ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty" 1368312746 65148 c61accbd2b9a5316d9be0887ec48d722 ""
@@ -104,11 +106,11 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "acl2016.aux" 1473387148 975 11227165ab693888a62d2f7d27ef3cc5 ""
-  "acl2016.bbl" 1473385393 2454 09d60396b8f3d208619bf628375e1d9d "bibtex acl2016"
+  "acl2016.aux" 1474412533 975 348e06b2798982b855c7e8ee212a9a54 ""
+  "acl2016.bbl" 1474411213 2454 09d60396b8f3d208619bf628375e1d9d "bibtex acl2016"
   "acl2016.sty" 1455109034 23474 f473cd17b4a23709984055f33545f9ef ""
-  "acl2016.tex" 1473387146 18672 a880058689b8522897718b42f7861f91 ""
+  "acl2016.tex" 1474411658 18662 9921a7dee3d71da99d6fd357a2fe8ddf ""
   (generated)
   "acl2016.pdf"
-  "acl2016.log"
   "acl2016.aux"
+  "acl2016.log"
