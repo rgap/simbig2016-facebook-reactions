@@ -1,3 +1,0 @@
-best_params_: {'clf__C': 1.0, 'lda__num_topics': 1500, 'lda__iterations': 2000}
-
-best_score_: 0.6525909592061742

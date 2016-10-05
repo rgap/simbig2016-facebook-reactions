@@ -1,2 +1,32 @@
 .DS_Store
-/1_facebook_fanpage_scrapper/*.pyc
+/1_notebooks/visualization/*.pyc
+/1_notebooks/grid_search/*.pyc
+
+# Ignore checkpoints created
+/1_notebooks/.ipynb_checkpoints
+/1_notebooks/BTM/.ipynb_checkpoints
+
+# Latex
+/2_paper/*.aux
+/2_paper/*.glo
+/2_paper/*.idx
+/2_paper/*.log
+/2_paper/*.toc
+/2_paper/*.ist
+/2_paper/*.acn
+/2_paper/*.acr
+/2_paper/*.alg
+/2_paper/*.bbl
+/2_paper/*.blg
+/2_paper/*.dvi
+/2_paper/*.glg
+/2_paper/*.gls
+/2_paper/*.ilg
+/2_paper/*.ind
+/2_paper/*.lof
+/2_paper/*.lot
+/2_paper/*.maf
+/2_paper/*.mtc
+/2_paper/*.mtc1
+/2_paper/*.out
+/2_paper/*.synctex.gz

@@ -1,0 +1,3 @@
+best_params_: {'doc2vec__min_count': 2, 'clf__C': 1, 'doc2vec__size': 400}
+
+best_score_: 0.4278941565600882

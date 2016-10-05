@@ -1,14 +1,15 @@
-Reproduce the Experiments in "[Predicting Reactions to Blog Headlines](http://bit.ly/2czObz2)"
+Reproduce the Experiments in "[Predicting Reactions to Blog Headlines](http://bit.ly/2czObz2)" - It isn't published yet!
 
 ## Environment
 
-- Mac OS El Capitan
+- Mac OS X El Capitan
 - Python 3
-- Python packages are listed on requirements.txt, some of them had to be installed from their source code.
+- Python packages are listed on requirements.txt
+NOTE: Some of them had to be installed from their source code, you need to install them if you want to run the notebooks in localhost.
 
 ## Help lectures
 
-Some useful lectures about feature models are on "lectures" folder
+Some useful lectures about feature models and useful stuff are on "lectures" folder.
 
 ## Getting started
 
@@ -18,22 +19,20 @@ Some useful lectures about feature models are on "lectures" folder
 git clone https://github.com/rgap/simbig2016-facebook-reactions.git
 ```
 
-### Script for creating a fan-page mysql database
+### Facebook scraper
 
-0_mysql_database
-
-### Fanpage scrapper
-
-1_facebook_fanpage_scrapper
-
-### Create a dataset
-
-2_db_tojson
+Facebook data has been extracted using my "[Facebook fanpage scrapper](https://github.com/rgap/facebook-fanpage-scraper)". Although, you will be able to understand and reproduce my experiments just by executing the Jupyter notebooks.
 
 ### Notebooks
 
-3_notebooks
+Right after having extracted all data from a list of facebook fanpages, I saved my dataset on.
+
+1_notebooks/data/facebook_pages_data.json
+
+It is the only dataset I used on my paper. If you want to reproduce the experiments you should check out each ".ipynb" file.
 
 ### Paper and its latex source code
 
-4_paper
+The paper latex source code is located in
+
+2_paper/acl2016.tex
