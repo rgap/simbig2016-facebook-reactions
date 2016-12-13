@@ -1,4 +1,4 @@
-Reproduce the Experiments in "[Predicting Reactions to Blog Headlines](http://bit.ly/2czObz2)" - It isn't published yet!
+Reproduce the Experiments in "[Predicting Reactions to Blog Headlines](http://bit.ly/paper-relguzman-simbig2016)"
 
 ## Environment
 
