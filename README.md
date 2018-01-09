@@ -19,10 +19,6 @@ Some useful lectures about feature models and useful stuff are on "lectures" fol
 git clone https://github.com/rgap/simbig2016-facebook-reactions.git
 ```
 
-### Facebook scraper
-
-Facebook data has been extracted using my "[Facebook fanpage scrapper](https://github.com/rgap/facebook-fanpage-scraper)". Although, you will be able to understand and reproduce my experiments just by executing the Jupyter notebooks.
-
 ### Notebooks
 
 Right after having extracted all data from a list of facebook fanpages, I saved my dataset on.
